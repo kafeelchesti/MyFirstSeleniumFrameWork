@@ -11,8 +11,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import pageFactory.Pf_Homepage;
 import pageFactory.Pf_Signin;
 
-public class Scenario_Search extends Base{
-	
+public class Scenario_Search extends Base{	
 	
 //	invalid Search
 	@Test(dataProvider = "commondp",dataProviderClass=dataProvider.Dp_login.class,enabled=true)

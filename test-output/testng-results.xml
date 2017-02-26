@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="5" total="5" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="46502" started-at="2017-02-26T11:04:04Z" finished-at="2017-02-26T11:04:50Z">
+  <suite name="Suite" duration-ms="141403" started-at="2017-02-26T17:46:12Z" finished-at="2017-02-26T17:48:33Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="46502" started-at="2017-02-26T11:04:04Z" finished-at="2017-02-26T11:04:50Z">
+    <test name="Test" duration-ms="141403" started-at="2017-02-26T17:46:12Z" finished-at="2017-02-26T17:48:33Z">
       <class name="testScripts.Scenario_Login">
-        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:testScripts.Scenario_Login@a3426]" name="launchApp" is-config="true" duration-ms="5124" started-at="2017-02-26T16:34:42Z" finished-at="2017-02-26T16:34:47Z">
+        <test-method status="PASS" signature="initReports()[pri:0, instance:testScripts.Scenario_Login@3b0143d3]" name="initReports" is-config="true" duration-ms="408" started-at="2017-02-26T23:16:11Z" finished-at="2017-02-26T23:16:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initReports -->
+        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:testScripts.Scenario_Login@3b0143d3]" name="launchApp" is-config="true" duration-ms="12614" started-at="2017-02-26T23:18:06Z" finished-at="2017-02-26T23:18:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="ValidLogin(java.util.Map)[pri:0, instance:testScripts.Scenario_Login@a3426]" name="ValidLogin" duration-ms="2042" started-at="2017-02-26T16:34:47Z" data-provider="commondp" finished-at="2017-02-26T16:34:49Z">
+        <test-method status="FAIL" signature="ValidLogin(java.util.Map)[pri:0, instance:testScripts.Scenario_Login@3b0143d3]" name="ValidLogin" duration-ms="12655" started-at="2017-02-26T23:18:18Z" data-provider="commondp" finished-at="2017-02-26T23:18:31Z">
           <params>
             <param index="0">
               <value>
@@ -26,31 +30,65 @@
               </value>
             </param>
           </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Destination 'E:\FebReports' directory cannot be created]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Destination 'E:\FebReports' directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1085)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1038)
+	at genericLibrary.Base.getElementScreen(Base.java:113)
+	at genericLibrary.Base.cv_equals(Base.java:139)
+	at testScripts.Scenario_Login.ValidLogin(Scenario_Login.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.Scenario_Login@a3426]" name="tearDown" is-config="true" duration-ms="796" started-at="2017-02-26T16:34:49Z" finished-at="2017-02-26T16:34:50Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.Scenario_Login@3b0143d3]" name="tearDown" is-config="true" duration-ms="2232" started-at="2017-02-26T23:18:31Z" finished-at="2017-02-26T23:18:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testScripts.Scenario_Login -->
       <class name="testScripts.Scenario_Search">
-        <test-method status="PASS" signature="initReports()[pri:0, instance:testScripts.Scenario_Search@136e911]" name="initReports" is-config="true" duration-ms="94" started-at="2017-02-26T16:34:04Z" finished-at="2017-02-26T16:34:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initReports -->
-        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:testScripts.Scenario_Search@136e911]" name="launchApp" is-config="true" duration-ms="6594" started-at="2017-02-26T16:34:04Z" finished-at="2017-02-26T16:34:11Z">
+        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:testScripts.Scenario_Search@61f8bee4]" name="launchApp" is-config="true" duration-ms="37416" started-at="2017-02-26T23:16:16Z" finished-at="2017-02-26T23:16:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="invalidsearch(java.util.Map)[pri:0, instance:testScripts.Scenario_Search@136e911]" name="invalidsearch" duration-ms="3067" started-at="2017-02-26T16:34:11Z" data-provider="commondp" finished-at="2017-02-26T16:34:14Z">
+        <test-method status="FAIL" signature="invalidsearch(java.util.Map)[pri:0, instance:testScripts.Scenario_Search@61f8bee4]" name="invalidsearch" duration-ms="3511" started-at="2017-02-26T23:16:54Z" data-provider="commondp" finished-at="2017-02-26T23:16:57Z">
           <params>
             <param index="0">
               <value>
@@ -58,25 +96,63 @@
               </value>
             </param>
           </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Destination 'E:\FebReports' directory cannot be created]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Destination 'E:\FebReports' directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1085)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1038)
+	at genericLibrary.Base.getScreen(Base.java:89)
+	at genericLibrary.Base.cv_contains(Base.java:166)
+	at testScripts.Scenario_Search.invalidsearch(Scenario_Search.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidsearch -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.Scenario_Search@136e911]" name="tearDown" is-config="true" duration-ms="1151" started-at="2017-02-26T16:34:14Z" finished-at="2017-02-26T16:34:15Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.Scenario_Search@61f8bee4]" name="tearDown" is-config="true" duration-ms="11963" started-at="2017-02-26T23:16:57Z" finished-at="2017-02-26T23:17:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:testScripts.Scenario_Search@136e911]" name="launchApp" is-config="true" duration-ms="4891" started-at="2017-02-26T16:34:15Z" finished-at="2017-02-26T16:34:20Z">
+        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:testScripts.Scenario_Search@61f8bee4]" name="launchApp" is-config="true" duration-ms="15955" started-at="2017-02-26T23:17:10Z" finished-at="2017-02-26T23:17:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="validsearch(java.util.Map)[pri:0, instance:testScripts.Scenario_Search@136e911]" name="validsearch" duration-ms="3252" started-at="2017-02-26T16:34:20Z" data-provider="commondp" finished-at="2017-02-26T16:34:23Z">
+        <test-method status="FAIL" signature="validsearch(java.util.Map)[pri:0, instance:testScripts.Scenario_Search@61f8bee4]" name="validsearch" duration-ms="2318" started-at="2017-02-26T23:17:25Z" data-provider="commondp" finished-at="2017-02-26T23:17:28Z">
           <params>
             <param index="0">
               <value>
@@ -84,25 +160,63 @@
               </value>
             </param>
           </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Destination 'E:\FebReports' directory cannot be created]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Destination 'E:\FebReports' directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1085)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1038)
+	at genericLibrary.Base.getScreen(Base.java:89)
+	at genericLibrary.Base.cv_contains(Base.java:166)
+	at testScripts.Scenario_Search.validsearch(Scenario_Search.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validsearch -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.Scenario_Search@136e911]" name="tearDown" is-config="true" duration-ms="806" started-at="2017-02-26T16:34:23Z" finished-at="2017-02-26T16:34:24Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.Scenario_Search@61f8bee4]" name="tearDown" is-config="true" duration-ms="1236" started-at="2017-02-26T23:17:28Z" finished-at="2017-02-26T23:17:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:testScripts.Scenario_Search@136e911]" name="launchApp" is-config="true" duration-ms="4910" started-at="2017-02-26T16:34:24Z" finished-at="2017-02-26T16:34:29Z">
+        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:testScripts.Scenario_Search@61f8bee4]" name="launchApp" is-config="true" duration-ms="18476" started-at="2017-02-26T23:17:29Z" finished-at="2017-02-26T23:17:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="validsearch(java.util.Map)[pri:0, instance:testScripts.Scenario_Search@136e911]" name="validsearch" duration-ms="3429" started-at="2017-02-26T16:34:29Z" data-provider="commondp" finished-at="2017-02-26T16:34:32Z">
+        <test-method status="FAIL" signature="validsearch(java.util.Map)[pri:0, instance:testScripts.Scenario_Search@61f8bee4]" name="validsearch" duration-ms="2208" started-at="2017-02-26T23:17:47Z" data-provider="commondp" finished-at="2017-02-26T23:17:50Z">
           <params>
             <param index="0">
               <value>
@@ -110,25 +224,63 @@
               </value>
             </param>
           </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Destination 'E:\FebReports' directory cannot be created]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Destination 'E:\FebReports' directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1085)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1038)
+	at genericLibrary.Base.getScreen(Base.java:89)
+	at genericLibrary.Base.cv_contains(Base.java:166)
+	at testScripts.Scenario_Search.validsearch(Scenario_Search.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validsearch -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.Scenario_Search@136e911]" name="tearDown" is-config="true" duration-ms="823" started-at="2017-02-26T16:34:32Z" finished-at="2017-02-26T16:34:33Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.Scenario_Search@61f8bee4]" name="tearDown" is-config="true" duration-ms="614" started-at="2017-02-26T23:17:50Z" finished-at="2017-02-26T23:17:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:testScripts.Scenario_Search@136e911]" name="launchApp" is-config="true" duration-ms="4708" started-at="2017-02-26T16:34:33Z" finished-at="2017-02-26T16:34:38Z">
+        <test-method status="PASS" signature="launchApp(java.lang.String)[pri:0, instance:testScripts.Scenario_Search@61f8bee4]" name="launchApp" is-config="true" duration-ms="12379" started-at="2017-02-26T23:17:50Z" finished-at="2017-02-26T23:18:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method status="PASS" signature="validsearch(java.util.Map)[pri:0, instance:testScripts.Scenario_Search@136e911]" name="validsearch" duration-ms="3454" started-at="2017-02-26T16:34:38Z" data-provider="commondp" finished-at="2017-02-26T16:34:41Z">
+        <test-method status="FAIL" signature="validsearch(java.util.Map)[pri:0, instance:testScripts.Scenario_Search@61f8bee4]" name="validsearch" duration-ms="2263" started-at="2017-02-26T23:18:03Z" data-provider="commondp" finished-at="2017-02-26T23:18:05Z">
           <params>
             <param index="0">
               <value>
@@ -136,10 +288,48 @@
               </value>
             </param>
           </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Destination 'E:\FebReports' directory cannot be created]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Destination 'E:\FebReports' directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1085)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1038)
+	at genericLibrary.Base.getScreen(Base.java:89)
+	at genericLibrary.Base.cv_contains(Base.java:166)
+	at testScripts.Scenario_Search.validsearch(Scenario_Search.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validsearch -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.Scenario_Search@136e911]" name="tearDown" is-config="true" duration-ms="809" started-at="2017-02-26T16:34:41Z" finished-at="2017-02-26T16:34:42Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testScripts.Scenario_Search@61f8bee4]" name="tearDown" is-config="true" duration-ms="579" started-at="2017-02-26T23:18:05Z" finished-at="2017-02-26T23:18:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

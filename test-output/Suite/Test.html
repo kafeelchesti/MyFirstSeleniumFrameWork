@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Feb 26 16:34:04 IST 2017</td>
+<td>Started on:</td><td>Sun Feb 26 23:16:12 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>46 seconds (46502 ms)</td>
+<tr><td>Total time:</td><td>141 seconds (141403 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,29 +76,214 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testScripts.Scenario_Login.ValidLogin()'><b>ValidLogin</b><br>Test class: testScripts.Scenario_Login<br>Parameters: {Order=1.0, Script=ValidLogin, Uname=qtpworld2008@gmail.com, TC_ID=GB_07, Execute=Y, Exp_msg=Hi qtpworld2008 , Pwd=learn123}</td>
-<td></td>
-<td>2</td>
-<td>testScripts.Scenario_Login@a3426</td></tr>
+<td><div><pre>java.io.IOException: Destination &apos;E:\FebReports&apos; directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1085)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1038)
+	at genericLibrary.Base.getElementScreen(Base.java:113)
+	at genericLibrary.Base.cv_equals(Base.java:139)
+	at testScripts.Scenario_Login.ValidLogin(Scenario_Login.java:63)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace468776694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace468776694'><pre>java.io.IOException: Destination &apos;E:\FebReports&apos; directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1085)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1038)
+	at genericLibrary.Base.getElementScreen(Base.java:113)
+	at genericLibrary.Base.cv_equals(Base.java:139)
+	at testScripts.Scenario_Login.ValidLogin(Scenario_Login.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>12</td>
+<td>testScripts.Scenario_Login@3b0143d3</td></tr>
 <tr>
 <td title='testScripts.Scenario_Search.invalidsearch()'><b>invalidsearch</b><br>Test class: testScripts.Scenario_Search<br>Parameters: {Order=1.0, exp_result=Sorry..'kdsf' does not match any product on Rediff Books., Script=invalidsearch, searchoption=kdsf, TC_ID=GB_08, Execute=Y}</td>
-<td></td>
+<td><div><pre>java.io.IOException: Destination &apos;E:\FebReports&apos; directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1085)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1038)
+	at genericLibrary.Base.getScreen(Base.java:89)
+	at genericLibrary.Base.cv_contains(Base.java:166)
+	at testScripts.Scenario_Search.invalidsearch(Scenario_Search.java:28)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2024711353", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2024711353'><pre>java.io.IOException: Destination &apos;E:\FebReports&apos; directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1085)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1038)
+	at genericLibrary.Base.getScreen(Base.java:89)
+	at genericLibrary.Base.cv_contains(Base.java:166)
+	at testScripts.Scenario_Search.invalidsearch(Scenario_Search.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
 <td>3</td>
-<td>testScripts.Scenario_Search@136e911</td></tr>
+<td>testScripts.Scenario_Search@61f8bee4</td></tr>
 <tr>
 <td title='testScripts.Scenario_Search.validsearch()'><b>validsearch</b><br>Test class: testScripts.Scenario_Search<br>Parameters: {Order=1.0, exp_result=234.0, Script=validsearch, searchoption=ways, TC_ID=GB_09, Execute=Y}</td>
-<td></td>
-<td>3</td>
-<td>testScripts.Scenario_Search@136e911</td></tr>
+<td><div><pre>java.io.IOException: Destination &apos;E:\FebReports&apos; directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1085)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1038)
+	at genericLibrary.Base.getScreen(Base.java:89)
+	at genericLibrary.Base.cv_contains(Base.java:166)
+	at testScripts.Scenario_Search.validsearch(Scenario_Search.java:56)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1608103523", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1608103523'><pre>java.io.IOException: Destination &apos;E:\FebReports&apos; directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1085)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1038)
+	at genericLibrary.Base.getScreen(Base.java:89)
+	at genericLibrary.Base.cv_contains(Base.java:166)
+	at testScripts.Scenario_Search.validsearch(Scenario_Search.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>2</td>
+<td>testScripts.Scenario_Search@61f8bee4</td></tr>
 <tr>
 <td title='testScripts.Scenario_Search.validsearch()'><b>validsearch</b><br>Test class: testScripts.Scenario_Search<br>Parameters: {Order=1.0, exp_result=342.0, Script=validsearch, searchoption=chandler, TC_ID=GB_10, Execute=Y}</td>
-<td></td>
-<td>3</td>
-<td>testScripts.Scenario_Search@136e911</td></tr>
+<td><div><pre>java.io.IOException: Destination &apos;E:\FebReports&apos; directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1085)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1038)
+	at genericLibrary.Base.getScreen(Base.java:89)
+	at genericLibrary.Base.cv_contains(Base.java:166)
+	at testScripts.Scenario_Search.validsearch(Scenario_Search.java:56)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace397318359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace397318359'><pre>java.io.IOException: Destination &apos;E:\FebReports&apos; directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1085)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1038)
+	at genericLibrary.Base.getScreen(Base.java:89)
+	at genericLibrary.Base.cv_contains(Base.java:166)
+	at testScripts.Scenario_Search.validsearch(Scenario_Search.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>2</td>
+<td>testScripts.Scenario_Search@61f8bee4</td></tr>
 <tr>
 <td title='testScripts.Scenario_Search.validsearch()'><b>validsearch</b><br>Test class: testScripts.Scenario_Search<br>Parameters: {Order=1.0, exp_result=35.0, Script=validsearch, searchoption=jaico, TC_ID=GB_11, Execute=Y}</td>
-<td></td>
-<td>3</td>
-<td>testScripts.Scenario_Search@136e911</td></tr>
+<td><div><pre>java.io.IOException: Destination &apos;E:\FebReports&apos; directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1085)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1038)
+	at genericLibrary.Base.getScreen(Base.java:89)
+	at genericLibrary.Base.cv_contains(Base.java:166)
+	at testScripts.Scenario_Search.validsearch(Scenario_Search.java:56)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace673384643", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace673384643'><pre>java.io.IOException: Destination &apos;E:\FebReports&apos; directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1085)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1038)
+	at genericLibrary.Base.getScreen(Base.java:89)
+	at genericLibrary.Base.cv_contains(Base.java:166)
+	at testScripts.Scenario_Search.validsearch(Scenario_Search.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>2</td>
+<td>testScripts.Scenario_Search@61f8bee4</td></tr>
 </table><p>
 </body>
 </html>

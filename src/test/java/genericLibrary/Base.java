@@ -25,7 +25,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
-import com.beust.jcommander.Parameter;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -39,8 +38,7 @@ public class Base {
 	
 	@BeforeSuite
 	public void initReports(){
-		eReports = new ExtentReports("E:\\FebReports\\proj_" + getDatetimestamp() + ".html",false);
-		
+		eReports = new ExtentReports("C:\\FebReports\\proj_" + getDatetimestamp() + ".html",false);		
 	}
 	
 	@Parameters({"browser"})
@@ -85,7 +83,7 @@ public class Base {
 		
 		TakesScreenshot screen=(TakesScreenshot)driver;
 		File screenshotAs = screen.getScreenshotAs(OutputType.FILE);
-		String path="E:\\FebReports\\snapshot_" + getDatetimestamp() + ".png";
+		String path="C:\\FebReports\\snapshot_" + getDatetimestamp() + ".png";
 		FileUtils.copyFile(screenshotAs, new File(path));
 		return path;
 	}
@@ -108,7 +106,7 @@ public class Base {
 		BufferedImage eleScreenshot= fullImg.getSubimage(point.getX(), point.getY(),
 		    eleWidth, eleHeight);
 		ImageIO.write(eleScreenshot, "png", screenshot);
-		String path="E:\\FebReports\\snapshot_" + getDatetimestamp() + ".png";
+		String path="C:\\FebReports\\snapshot_" + getDatetimestamp() + ".png";
 		// Copy the element screenshot to disk
 		FileUtils.copyFile(screenshot, new File(path));
 		

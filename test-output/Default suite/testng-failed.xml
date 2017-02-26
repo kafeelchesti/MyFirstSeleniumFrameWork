@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
       <class name="testScripts.Scenario_Search">
         <methods>
           <include name="initReports"/>
-          <include name="tearDown"/>
-          <include name="invalidsearch" invocation-numbers="0"/>
-          <include name="launchApp"/>
+          <include name="invalidsearch"/>
+          <include name="validsearch"/>
         </methods>
       </class> <!-- testScripts.Scenario_Search -->
     </classes>

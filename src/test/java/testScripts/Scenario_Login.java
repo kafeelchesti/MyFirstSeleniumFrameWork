@@ -29,17 +29,11 @@ public class Scenario_Login extends Base{
 		startTest = eReports.startTest(tcid + "_" +order );
 		startTest.assignCategory("firefox");
 		login_Log.info("Starting test:" + tcid + " and order: " + order);
-		startTest.log(LogStatus.PASS, "Starting test","Starting test:" + tcid + " and order: " + order);
-//		code change
-//		driver.findElement(By.linkText("Sign In")).click();
+		startTest.log(LogStatus.PASS, "Starting test","Starting test Valid Login:" + tcid + " and order: " + order);
 		
 		Pf_Homepage pf_Homepage = new Pf_Homepage(driver);		
 		pf_Homepage.lk_Signin.click();		
 		login_Log.info("Clicked on Sigin Link");
-//		------------------------------------------------------------
-//		driver.findElement(By.name("logid")).sendKeys(uname);
-//		driver.findElement(By.name("pswd")).sendKeys(LoginMap.get("Pwd"));
-//		driver.findElement(By.xpath("//input[@value='Login']")).click();
 		
 		Pf_Signin pf_Signin = new Pf_Signin(driver);
 		pf_Signin.cl_login(uname,pwd );
@@ -73,16 +67,9 @@ public class Scenario_Login extends Base{
 		String tcid = LoginMap.get("TC_ID");
 		String order = LoginMap.get("Order");
 		
-//		code change
-//		driver.findElement(By.linkText("Sign In")).click();
-		
+		startTest.log(LogStatus.PASS, "Starting test","Starting test Invalid Login:" + tcid + " and order: " + order);
 		Pf_Homepage pf_Homepage = new Pf_Homepage(driver);		
 		pf_Homepage.lk_Signin.click();		
-		
-//		------------------------------------------------------------
-//		driver.findElement(By.name("logid")).sendKeys(uname);
-//		driver.findElement(By.name("pswd")).sendKeys(LoginMap.get("Pwd"));
-//		driver.findElement(By.xpath("//input[@value='Login']")).click();
 		
 		Pf_Signin pf_Signin = new Pf_Signin(driver);
 		pf_Signin.cl_login(uname, LoginMap.get("Pwd"));
